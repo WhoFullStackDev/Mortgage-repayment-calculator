@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mortgage Calculator</title>
+  </head>
+  <body>
+    <div id="container">
+      <section id="form-input">
+        <div id="header">
+          <h1 class="heading">Mortgage Calculator</h1>
+          <p id="reset">Clear All</p>
+        </div>
+        <form action="" id="form">
+          <div class="inputContainer">
+            <label for="amount">Mortgage Amount</label>
+            <div class="iconInInput">
+              <span class="lefticon">&#x20b9;</span>
+              <input type="number" name="amount" id="amount" />
+            </div>
+          </div>
+          <div class="inputRow">
+            <div class="inputContainer">
+              <label for="year">Mortgage Term</label>
+              <div class="iconInInput">
+                <span class="righticon">years</span>
+                <input type="number" name="year" id="year" />
+              </div>
+            </div>
+            <div class="inputContainer">
+              <label for="rate">Interest Rate</label>
+              <div class="iconInInput">
+                <span class="righticon">%</span>
+                <input type="number" name="rate" id="rate" />
+              </div>
+            </div>
+          </div>
+          <div id="radioContainer">
+            <p>Mortgage Type</p>
+            <div class="radioInput">
+              <input
+                type="radio"
+                name="type"
+                value="repayments"
+                ="radio"
+                checked
+              />
+
+              <label for="" class="radioLabel">Repayments</label>
+            </div>
+            <div class="radioInput">
+              <input type="radio" name="type" value="interest" id="radio" />
+              <label for="" class="radioLabel">Interest Only</label>
+            </div>
+          </div>
+          <button type="submit" id="btn">
+            <img src="./assets/images/icon-calculator.svg" alt="" />Calculate
+          </button>
+        </form>
+      </section>
+      <section id="result">
+        <div id="empty">
+          <img src="assets/images/illustration-empty.svg" alt="empty" />
+          <h1>Result Shown here</h1>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
