@@ -225,7 +225,8 @@ label {
   #container {
     flex-direction: column;
     width: 98%;
-    height: 660px;
+    height: 685px;
+    /* margin: 20px 0 20px 0; */
   }
 
   #form-input {
@@ -289,7 +290,7 @@ label {
   }
 
   #btn {
-    margin-top: -4px;
+    margin-top: 5px;
   }
 
   #result img {
